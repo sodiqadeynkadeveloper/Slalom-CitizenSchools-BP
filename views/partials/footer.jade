@@ -1,0 +1,31 @@
+.footer-wrapper
+  #footer
+    div.row
+      .small-12.medium-12.large-12.columns
+        section.small-12.medium-12.large-12
+          h2 
+            span.blue Feedback Is Appreciated!
+          p
+            |  Please provide any and all constructive feedback and include your email address so that we can get back to you!  We want to hear all the great things you have to say about our presentation, prototype and each station that you visit.
+            |  Your feedback will help us become better as we continue on our journey in the fields of design, engineering and business.
+        section#feedback-form.row.small-12.medium-7.large-12
+          div.small-12.medium-12.large-7.small-centered.columns
+            form(name="suggestionsForm")
+              div.row
+                div.small-12.large-6.medium-12.columns
+                  input#contact-name(type="text", name="name-field", placeholder="Name")
+                div.small-12.large-6.medium-12.columns
+                  input#contact-email(type="email", name="email-field", placeholder="Email")
+              div.row
+                div.small-12.medium-12.large-12.columns
+                  textarea#contact-message(name="message-field", placeholder="Message")
+              div.small-12.medium-12.large-12.button-group.clearfix
+                a#send-button.small-12.medium-6.large-6.button.right(href="#") Send
+                a.small-12.medium-6.large-6.button.secondary.left(href="#") Reset
+    .row.display
+      hr
+      .small-6.small-centered.large-centered.columns
+        a.small-3.partners-logo(href="http://www.citizenschools.org", target="_blank")
+          img.logo(src='/images/cs-logo.png')
+        a.small-3.partners-logo(href="http://www.slalom.com", target="_blank")
+          img(src='/images/slalom-logo.png')
