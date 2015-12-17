@@ -6,7 +6,7 @@ var nodemailer = require('nodemailer');
 var transporter = nodemailer.createTransport({
   service: 'Gmail',
   auth: {
-    user: 'tylerallisondeveloper@gmail.com',
+    user: 'sodiqadeynkadeveloper@gmail.com',
     pass: 'ilovecode1'
   }
 });
@@ -16,8 +16,8 @@ function sendMail(mailData){
 
   // setup e-mail data with unicode symbols
   var mailOptions = {
-    from: 'Tyler ✔ <tylerallisondeveloper@gmail.com>', // sender address
-    to: 'tylerallisondeveloper@gmail.com, bailey1.brandon@gmail.com ' + mailData.email, // list of receivers
+    from: 'Sodiq ✔ <sodiqadeynkadeveloper@gmail.com>', // sender address
+    to: 'sodiqadeynkadeveloper@gmail.com, bailey1.brandon@gmail.com ' + mailData.email, // list of receivers
     subject: '‼️ Hello and Thank You from Citizen Schools ‼️ 😎😁😃', // Subject line
     text: 'Thanks for your feedback!', // plaintext body
     html: '<b>Hello world ✔</b>' // html body
@@ -35,7 +35,7 @@ function sendMail(mailData){
 
 /* GET Feedback page*/
 router.get('/', function(req, res, next) {
-  var mailData = req.query; 
+  var mailData = req.query;
   console.log('got request', mailData);
   sendMail(mailData);
 });
